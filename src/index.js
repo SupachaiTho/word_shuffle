@@ -1,15 +1,24 @@
-import React from 'react';
+import React,{Component} from 'react';
 import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
-import { createStore, applyMiddleware } from 'redux';
+import _ from 'lodash'
 
-import App from './components/app';
-import reducers from './reducers';
+class App extends Component {
+    constructor(props){
+        super(props);
 
-const createStoreWithMiddleware = applyMiddleware()(createStore);
+        this.state = {
+          word_correct: [],
+          word_shuffle: []
+        };
+    }
 
-ReactDOM.render(
-  <Provider store={createStoreWithMiddleware(reducers)}>
-    <App />
-  </Provider>
-  , document.querySelector('.container'));
+    render(){
+        return (
+            <div>
+              Initial!!
+            </div>
+    );
+    }
+}
+
+ReactDOM.render(<App />, document.querySelector('.container'));
