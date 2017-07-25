@@ -1,0 +1,21 @@
+.character  {
+  border: 1px solid #ddd;
+  font-size: 300%;
+  padding: 10px;
+  margin: 5px;
+  width: 15%;
+  height: 9%;
+  text-align: center;
+}
+
+.selected{
+  border: 2px solid #229954!important;
+}
+
+.corrected{
+  background-color: #2ECC71;
+}
+
+.incorrected{
+  background-color: #B03A2E;
+}
