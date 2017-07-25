@@ -15,9 +15,7 @@ class Word extends Component {
           key: 'n/a',
           select_location: 0,
           history: [],
-          result: [],
-          dataOn: false,
-          dataHold: -1
+          result: []
         };
 
         document.addEventListener('keydown', (e)=>this.getInput(keycode(e)))
@@ -35,6 +33,7 @@ class Word extends Component {
             <Droppable
                     types={['word']} // <= allowed drop types
                     onDrop={this.onDrop.bind(this)}
+                    key = {index}
                     >
               <Character
               key = {index}
